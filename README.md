@@ -20,7 +20,7 @@ import { IconMasterVue } from 'icon-master'
 <template>
     <div>
         ...
-        <IconMaster colorRef="ff0000" nameRef="After-the-rain" />
+        <IconMaster color="ff0000" name="After-the-rain" />
         ...
     </div>
 </template>
@@ -36,7 +36,7 @@ export default () => {
   return (
     <div>
       ...
-      <IconMaster color='ff0000' iconName='After-the-rain' />
+      <IconMaster color='ff0000' name='After-the-rain' />
       ...
     </div>
   )

@@ -2,21 +2,22 @@ import { defineComponent, h, PropType } from 'vue'
 import { IconMasterType } from '../index.types'
 
 type Props = {
-	colorRef: string
-	nameRef: IconMasterType
+	color: string
+	name: IconMasterType
 }
 
 export default defineComponent({
 	props: {
-		colorRef: { type: String, default: '676767' },
-		nameRef: { type: String as PropType<IconMasterType>, default: 'Add' },
+		color: { type: String, default: '676767' },
+		name: { type: String as PropType<IconMasterType>, default: 'Add' },
 	},
 	setup(props: Props) {
 		return () =>
 			h('img', {
-				src: `https://icon-master.com/i/${
-					props.nameRef
-				}/${props.colorRef.replace('#', '')}`,
+				src: `https://icon-master.com/i/${props.name}/${props.color.replace(
+					'#',
+					''
+				)}`,
 			})
 	},
 })
