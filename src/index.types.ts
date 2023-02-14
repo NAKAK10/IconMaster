@@ -1,4 +1,4 @@
-export type IconType =
+export type IconMasterType =
 	| 'Add'
 	| 'Bag-229'
 	| 'Grid'

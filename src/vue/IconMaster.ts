@@ -1,15 +1,15 @@
 import { defineComponent, h, PropType } from 'vue'
-import { IconType } from '../index.types'
+import { IconMasterType } from '../index.types'
 
 type Props = {
 	colorRef: string
-	nameRef: IconType
+	nameRef: IconMasterType
 }
 
 export default defineComponent({
 	props: {
 		colorRef: { type: String, default: '676767' },
-		nameRef: { type: String as PropType<IconType>, default: 'Add' },
+		nameRef: { type: String as PropType<IconMasterType>, default: 'Add' },
 	},
 	setup(props: Props) {
 		return () =>

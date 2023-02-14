@@ -1,9 +1,9 @@
 import React from 'react'
-import { IconType } from '../index.types'
+import { IconMasterType } from '../index.types'
 
 type Props = {
   color?: string
-  iconName?: IconType
+  iconName?: IconMasterType
   className?: string
   style?: React.CSSProperties
 }
