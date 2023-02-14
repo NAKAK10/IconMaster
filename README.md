@@ -10,9 +10,8 @@ npm i icon-master@latest
 
 https://icon-master.com/
 
-<a href="https://icon-master.com/developer/react">React</a>
-</br>
-<a href="https://icon-master.com/developer/vue">Vue</a>
+- [React](https://icon-master.com/developer/react)
+- [Vue](https://icon-master.com/developer/vue)
 
 ## vue
 
