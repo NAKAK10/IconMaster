@@ -1,24 +1,17 @@
 {
   "name": "icon-master",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "",
-  "main": "dist/index.js",
-  "exports": {
-    ".": "./dist/index.js",
-    "./react": {
-      "types": "./dist/react/index.d.ts",
-      "default": "./dist/react/index.js"
-    },
-    "./vue": {
-      "types": "./dist/vue/index.d.ts",
-      "default": "./dist/vue/index.js"
-    }
-  },
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/index.d.ts",
+  "default": "./dist/cjs/index.js",
+  "import": "./dist/index.js",
+  "require": "./dist/cjs/index.js",
   "scripts": {
     "test:vue": "cd vue-ui-test && npm run dev",
     "test:react": "cd react-ui-test && npm run dev",
-    "build": "tsc",
-    "deploy": "tsc && npm publish"
+    "build": "tsc && tsc -p tsconfig.cjs.json",
+    "deploy": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
