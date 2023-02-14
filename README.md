@@ -14,7 +14,8 @@ https://icon-master.com/
 
 ```js
 <script setup lang='ts'>
-import {IconMaster} from 'icon-master/vue'
+import { IconMasterVue } from 'icon-master'
+// import { IconMaster } from 'icon-master/dist/vue'
 </script>
 <template>
     <div>
@@ -28,7 +29,8 @@ import {IconMaster} from 'icon-master/vue'
 ## react
 
 ```js
-import { IconMaster } from 'icon-master/react'
+import { IconMasterReact } from 'icon-master'
+// import { IconMaster } from 'icon-master/dist/react'
 
 export default () => {
   return (

@@ -1,9 +1,19 @@
 {
   "name": "icon-master",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "default": "./dist/react/index.js"
+    },
+    "./vue": {
+      "types": "./dist/vue/index.d.ts",
+      "default": "./dist/vue/index.js"
+    }
+  },
   "scripts": {
     "test:vue": "cd vue-ui-test && npm run dev",
     "test:react": "cd react-ui-test && npm run dev",
