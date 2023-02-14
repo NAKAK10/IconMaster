@@ -1,0 +1,39 @@
+{
+  "name": "icon-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test:vue": "cd vue-ui-test && npm run dev",
+    "test:react": "cd react-ui-test && npm run dev",
+    "build": "tsc",
+    "deploy": "tsc && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com.private:NAKAK10/IconMaster"
+  },
+  "keywords": [
+    "icon",
+    "ui",
+    "component",
+    "vue",
+    "vuejs",
+    "react",
+    "website"
+  ],
+  "homepage": "https://icon-master.com/",
+  "author": "NAKAK10",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@vue/test-utils": "^2.2.10",
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.4"
+  }
+}
