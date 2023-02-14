@@ -6,7 +6,7 @@
 npm i icon-master@latest
 ```
 
-## select icons
+## select icons & documentation
 
 https://icon-master.com/
 
